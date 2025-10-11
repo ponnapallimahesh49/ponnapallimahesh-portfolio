@@ -11,21 +11,18 @@ import {
 const Footer = ({ bottomText }) => {
   return (
     <footer className="bg-white dark:bg-slate-900 text-gray-800 dark:text-gray-300 py-10 border-t border-gray-300 dark:border-slate-700 transition-colors duration-300">
-      <div
-        className="container mx-auto px-6 flex flex-row flex-wrap justify-start items-start 
-                gap-6 md:gap-40"
-      >
-        {" "}
+      <div className="container mx-auto px-6 flex flex-col md:flex-row flex-wrap justify-center md:justify-start items-center md:items-start gap-10 md:gap-40 text-center md:text-left">
         {/* Photo */}
         <div className="flex-shrink-0">
           <img
             src="/mahi3.png"
             alt="Ponnapalli Mahesh"
-            className="w-24 md:w-40 h-24 md:h-40 object-cover rounded-full border-4 border-teal-400 shadow-lg"
+            className="w-24 md:w-40 h-24 md:h-40 object-cover rounded-full border-4 border-teal-400 shadow-lg mx-auto md:mx-0"
           />
         </div>
+
         {/* Quick Links */}
-        <div className="flex-shrink-0">
+        <div>
           <h2 className="text-lg font-semibold text-teal-400 mb-4">
             Quick Links
           </h2>
@@ -57,25 +54,27 @@ const Footer = ({ bottomText }) => {
             </li>
           </ul>
         </div>
+
         {/* Contact */}
-        <div className="flex-shrink-0">
+        <div>
           <h2 className="text-lg font-semibold text-teal-400 mb-4">Contact</h2>
           <ul className="space-y-2 text-sm">
-            <li className="flex items-center gap-2">
+            <li className="flex items-center justify-center md:justify-start gap-2">
               <FaEnvelope className="text-teal-400" />{" "}
               ponnapallimahesh49@gmail.com
             </li>
-            <li className="flex items-center gap-2">
+            <li className="flex items-center justify-center md:justify-start gap-2">
               <FaMapMarkerAlt className="text-teal-400" /> Guntur, India
             </li>
           </ul>
         </div>
+
         {/* Social Links */}
-        <div className="flex-shrink-0">
+        <div>
           <h2 className="text-lg font-semibold text-teal-400 mb-4">
             Follow Me
           </h2>
-          <div className="flex gap-4 text-2xl">
+          <div className="flex justify-center md:justify-start gap-4 text-2xl">
             <a
               href="https://github.com/ponnapallimahesh49"
               target="_blank"
