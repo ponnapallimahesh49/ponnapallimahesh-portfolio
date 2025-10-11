@@ -1,0 +1,17 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@100..900&family=Bubblegum+Sans&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@100..900&family=Bubblegum+Sans&family=Fuzzy+Bubbles:wght@400;700&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import "tailwindcss";
+@theme {
+    --font-bubble: "Bubblegum Sans", sans-serif;
+    --font-display: "Montserrat", sans-serif;
+    --font-for-head: "Nunito", sans-serif;
+    --font-test2:"Fuzzy Bubbles",sans-serif;
+}
+/* ensure full height and smooth transitions */
+
+ html {
+     @apply transition-colors duration-300;
+     /* Smooth theme switch */
+ }
