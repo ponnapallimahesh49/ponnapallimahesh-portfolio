@@ -10,14 +10,14 @@ import {ScrollIndicator} from "./../components/scrollindicator"
 
 export function Home() {
   return (
-    <div className="bg-white dark:bg-slate-900 text-black px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24 dark:text-white flex flex-col justify-center items-center min-h-screen overflow-hidden transition-colors duration-300">
+    <div className="bg-white dark:bg-slate-900 text-black px-4 sm:px-6   dark:text-white flex flex-col justify-center items-center min-h-screen overflow-hidden transition-colors duration-300">
       <Navbar />
 
       {/* HERO SECTION */}
-      <section className="min-h-screen flex flex-col md:flex-row items-center justify-between w-full max-w-7xl mx-auto pt-24 sm:pt-28 md:pt-32 gap-6 md:gap-12 text-white">
+      <section className="min-h-screen flex flex-col md:flex-row items-center justify-between w-full max-w-7xl mx-auto px-6 text-white pt-32">
         {/* LEFT TEXT */}
         <motion.div
-          className="flex-1 text-center md:text-left space-y-4 sm:space-y-5 md:space-y-6 lg:space-y-8 md:pr-4 lg:pr-10 max-w-[90%] sm:max-w-[700px] md:max-w-[800px]"
+          className="flex-1 text-center md:text-left space-y-5 md:pr-10 max-w-[800px]"
           initial={{ opacity: 0, x: -60 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
@@ -46,7 +46,7 @@ export function Home() {
           </motion.h1>
 
           <motion.p
-            className="text-base sm:text-lg md:text-lg font-display text-gray-300 mx-auto md:mx-0 max-w-full sm:max-w-md md:max-w-lg lg:max-w-xl"
+            className="text-lg sm:text-lg font-display text-gray-300 mx-auto md:mx-0 max-w-[fit-content]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.7, duration: 1 }}
@@ -59,7 +59,7 @@ export function Home() {
 
           {/* Social Icons */}
           <motion.div
-            className="flex gap-4 sm:gap-5 md:gap-6 justify-center md:justify-start"
+            className="flex gap-6 justify-center md:justify-start"
             initial="hidden"
             animate="visible"
             variants={{
@@ -92,10 +92,10 @@ export function Home() {
                 title: "Instagram Profile",
               },
               {
-                href: "/ponnapallimahesh-resume.pdf",
+                href: "/ponnapallimahesh-resume.pdf", // link to resume
                 icon: <FileText size={32} color="#14B8A6" />,
                 title: "Resume",
-                download: false,
+                download: false, // optional for direct download
               },
             ].map((item, i) => (
               <motion.a
@@ -105,7 +105,7 @@ export function Home() {
                 rel="noopener noreferrer"
                 title={item.title}
                 download={item.download || false}
-                className="p-3 rounded-full border-2 border-teal-400 hover:scale-110 transition-transform duration-300 bg-white dark:bg-gray-800"
+                className="bg-gray-50 p-3 rounded-full border-2 border-teal-400 hover:scale-110 transition-transform duration-300"
                 variants={{
                   hidden: { opacity: 0, scale: 0 },
                   visible: { opacity: 1, scale: 1 },
@@ -119,7 +119,7 @@ export function Home() {
 
         {/* RIGHT IMAGE */}
         <motion.div
-          className="flex-1 mt-6 sm:mt-8 md:mt-0 flex justify-center md:justify-end relative"
+          className="flex-1 mt-10 md:mt-0 flex justify-center md:justify-end relative"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 1.2, duration: 0.8 }}
@@ -127,7 +127,7 @@ export function Home() {
           <div className="relative w-56 h-56 sm:w-72 sm:h-72 flex items-center justify-center">
             {/* Rotating border */}
             <motion.div
-              className="absolute inset-0 rounded-full border-4 border-teal-400/50"
+              className="absolute inset-0 rounded-full border-4 border-teal-400"
               animate={{ rotate: 360 }}
               transition={{ duration: 12, repeat: Infinity, ease: "linear" }}
             ></motion.div>
@@ -144,20 +144,9 @@ export function Home() {
         <ScrollIndicator />
       </section>
 
-      {/* About Section */}
-      <section id="about" className="w-full py-24 px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24">
-        <About />
-      </section>
-
-      {/* Projects Section */}
-      <section id="projects" className="w-full py-24 px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24">
-        <ProjectsHome />
-      </section>
-
-      {/* Footer Section */}
-      <section id="footer" className="w-full py-12 px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24">
-        <Footer />
-      </section>
+      <About />
+      <ProjectsHome />
+      <Footer />
     </div>
   );
 }
