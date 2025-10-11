@@ -1,12 +1,12 @@
 import { Navbar } from "../components/navbar";
 import "../App.css";
-import { Github, Linkedin, Mail, Instagram, Download,FileText } from "lucide-react";
+import { Github, Linkedin, Mail, Instagram, FileText } from "lucide-react";
 import { About } from "./About";
 import Footer from "../components/Footer";
 import { ProjectsHome } from "./../components/projectshome";
 import SplitText from "./../components/splittext";
 import { motion } from "framer-motion";
-import {ScrollIndicator} from "./../components/scrollindicator"
+import { ScrollIndicator } from "./../components/scrollindicator";
 
 export function Home() {
   return (
@@ -14,7 +14,7 @@ export function Home() {
       <Navbar />
 
       {/* HERO SECTION */}
-      <section className="min-h-screen flex flex-col md:flex-row items-center justify-between w-full max-w-7xl mx-auto px-6 text-white pt-32">
+      <section className="min-h-screen flex flex-col md:flex-row items-center justify-between w-full max-w-7xl mx-auto px-4 sm:px-6 text-white pt-20 sm:pt-32">
         {/* LEFT TEXT */}
         <motion.div
           className="flex-1 text-center md:text-left space-y-5 md:pr-10 max-w-[800px]"
@@ -24,7 +24,7 @@ export function Home() {
         >
           <SplitText
             text="Hello !!"
-            className="text-4xl font-semibold text-center"
+            className="text-3xl sm:text-4xl font-semibold text-center"
             delay={100}
             duration={0.6}
             ease="power3.out"
@@ -37,7 +37,7 @@ export function Home() {
           />
 
           <motion.h1
-            className="text-4xl md:text-6xl font-semibold font-display whitespace-nowrap"
+            className="text-3xl sm:text-4xl md:text-6xl font-semibold font-display"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
@@ -46,7 +46,7 @@ export function Home() {
           </motion.h1>
 
           <motion.p
-            className="text-lg font-display text-gray-300 mx-auto md:mx-0 max-w-[fit-content]"
+            className="text-base sm:text-lg font-display text-gray-300 mx-auto md:mx-0 max-w-[90%]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.7, duration: 1 }}
@@ -59,7 +59,7 @@ export function Home() {
 
           {/* Social Icons */}
           <motion.div
-            className="flex gap-6 justify-center md:justify-start"
+            className="flex gap-4 sm:gap-6 justify-center md:justify-start"
             initial="hidden"
             animate="visible"
             variants={{
@@ -73,29 +73,29 @@ export function Home() {
             {[
               {
                 href: "https://github.com/ponnapallimahesh49",
-                icon: <Github size={30} color="#14B8A6" strokeWidth={2.5} />,
+                icon: <Github size={24} color="#14B8A6" strokeWidth={2.5} />,
                 title: "GitHub Profile",
               },
               {
                 href: "https://linkedin.com/in/ponnapalli-mahesh",
-                icon: <Linkedin size={30} color="#14B8A6" strokeWidth={2.5} />,
+                icon: <Linkedin size={24} color="#14B8A6" strokeWidth={2.5} />,
                 title: "LinkedIn Profile",
               },
               {
                 href: "mailto:ponnapallimahesh49@gmail.com",
-                icon: <Mail size={30} color="#14B8A6" strokeWidth={2.5} />,
+                icon: <Mail size={24} color="#14B8A6" strokeWidth={2.5} />,
                 title: "Send Email",
               },
               {
                 href: "https://instagram.com/mahesh_ponnapalliii",
-                icon: <Instagram size={32} color="#14B8A6" />,
+                icon: <Instagram size={26} color="#14B8A6" />,
                 title: "Instagram Profile",
               },
               {
-                href: "/ponnapallimahesh-resume.pdf", // link to resume
-                icon: <FileText size={32} color="#14B8A6" />,
+                href: "/ponnapallimahesh-resume.pdf",
+                icon: <FileText size={26} color="#14B8A6" />,
                 title: "Resume",
-                download: false, // optional for direct download
+                download: false,
               },
             ].map((item, i) => (
               <motion.a
@@ -124,7 +124,7 @@ export function Home() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 1.2, duration: 0.8 }}
         >
-          <div className="relative w-56 h-56 sm:w-72 sm:h-72 flex items-center justify-center">
+          <div className="relative w-40 h-40 sm:w-56 sm:h-56 flex items-center justify-center">
             {/* Rotating border */}
             <motion.div
               className="absolute inset-0 rounded-full border-4 border-teal-400"
@@ -140,8 +140,8 @@ export function Home() {
             />
           </div>
         </motion.div>
-        
-        <ScrollIndicator/>
+
+        <ScrollIndicator />
       </section>
 
       <About />
