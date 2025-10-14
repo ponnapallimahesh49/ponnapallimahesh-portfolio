@@ -26,7 +26,7 @@ export function Projects() {
       id: 3,
       title: "Pagination",
       description:
-        "A MERN-based full-stack app to create customized QR codes with logos, frames, and multiple content types.",
+        "Fetched data from API and implemented pagination",
       image: "project2.png",
       tools: ["React", "Tailwindcss", "API Fetching"],
       link: "https://pagination-eight-snowy.vercel.app/",
