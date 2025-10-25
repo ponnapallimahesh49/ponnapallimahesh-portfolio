@@ -10,7 +10,7 @@ import {ScrollIndicator} from "./../components/scrollindicator"
 
 export function Home() {
   return (
-    <div className="bg-white dark:bg-slate-900 text-black px-4 sm:px-6   dark:text-white flex flex-col justify-center items-center min-h-screen overflow-hidden transition-colors duration-300">
+    <div className="bg-slate-900 text-black px-4 sm:px-6   dark:text-white flex flex-col justify-center items-center min-h-screen overflow-hidden transition-colors duration-300">
       <Navbar />
 
       {/* HERO SECTION */}
