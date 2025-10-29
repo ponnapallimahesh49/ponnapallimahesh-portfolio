@@ -7,7 +7,7 @@ import { CertificatesHome } from "../components/certificationsforhome";
 
 export function About() {
   return (
-    <div className="bg-white dark:bg-slate-900 text-black dark:text-white flex flex-col transition-colors duration-300">
+    <div className="bg-slate-900 text-black dark:text-white flex flex-col transition-colors duration-300">
       <Navbar />
 
       <section className="min-h-screen mt-20 px-4 md:px-12 py-16 w-full">
