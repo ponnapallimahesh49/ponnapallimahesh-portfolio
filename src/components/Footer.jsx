@@ -10,7 +10,7 @@ import {
 
 const Footer = ({ bottomText }) => {
   return (
-    <footer className="bg-slate-900 text-gray-100 dark:text-gray-300 py-10 border-t border-gray-300 dark:border-slate-700 transition-colors duration-300">
+    <footer className="bg-slate-900 text-gray-100 py-10 border-t border-gray-300 dark:border-slate-700 transition-colors duration-300">
       <div className="container mx-auto px-6 flex flex-col md:flex-row flex-wrap justify-center md:justify-start items-center md:items-start gap-10 md:gap-40 text-center md:text-left">
         {/* Photo */}
         <div className="flex-shrink-0">
