@@ -76,7 +76,7 @@ export function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, ease: "easeOut" }}
-              className="bg-gray-100 dark:bg-slate-800 border border-teal-500 rounded-2xl overflow-hidden shadow-lg hover:shadow-teal-500/40 transition-transform hover:-translate-y-2 duration-300 max-w-sm w-full flex flex-col"
+              className="bg-gray-700 border border-teal-500 rounded-2xl overflow-hidden shadow-lg hover:shadow-teal-500/40 transition-transform hover:-translate-y-2 duration-300 max-w-sm w-full flex flex-col"
             >
               <div className="h-48 w-full overflow-hidden">
                 <img
@@ -98,7 +98,7 @@ export function Projects() {
                     {project.tools.map((tool, index) => (
                       <span
                         key={index}
-                        className="px-3 py-1 text-xs bg-gray-300 dark:bg-slate-700 text-teal-300 rounded-full"
+                        className="px-3 py-1 text-xs bg-gray-300 dark:bg-slate-700 text-gray-300 rounded-full"
                       >
                         {tool}
                       </span>
