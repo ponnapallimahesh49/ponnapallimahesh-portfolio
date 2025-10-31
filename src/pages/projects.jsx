@@ -91,14 +91,14 @@ export function Projects() {
                   <h3 className="text-2xl font-bold text-teal-400 mb-2">
                     {project.title}
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 text-sm mb-4 h-20 overflow-hidden">
+                  <p className="text-gray-100  text-sm mb-4 h-20 overflow-hidden">
                     {project.description}
                   </p>
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project.tools.map((tool, index) => (
                       <span
                         key={index}
-                        className="px-3 py-1 text-xs bg-gray-300 dark:bg-slate-700 text-gray-300 rounded-full"
+                        className="px-3 py-1 text-xs bg-gray-300 dark:bg-slate-700 text-gray-700 rounded-full"
                       >
                         {tool}
                       </span>
