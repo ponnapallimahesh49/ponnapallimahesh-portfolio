@@ -74,7 +74,7 @@ export function ProjectsHome() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, ease: "easeOut" }}
-              className="bg-gray-100 dark:bg-slate-800 border border-teal-500 rounded-2xl overflow-hidden shadow-lg hover:shadow-teal-500/40 transition-transform hover:-translate-y-2 duration-300 max-w-sm w-full flex flex-col"
+              className="bg-gray-700 border border-teal-500 rounded-2xl overflow-hidden shadow-lg hover:shadow-teal-500/40 transition-transform hover:-translate-y-2 duration-300 max-w-sm w-full flex flex-col"
             >
               <div className="h-48 w-full overflow-hidden">
                 <img
@@ -89,7 +89,7 @@ export function ProjectsHome() {
                   <h3 className="text-2xl font-bold text-teal-400 mb-2">
                     {project.title}
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 text-sm mb-4 h-20 overflow-hidden">
+                  <p className="text-gray-100 text-sm mb-4 h-20 overflow-hidden">
                     {project.description}
                   </p>
                   <div className="flex flex-wrap gap-2 mb-6">
