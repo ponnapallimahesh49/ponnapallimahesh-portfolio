@@ -76,7 +76,7 @@ export function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, ease: "easeOut" }}
-              className="bg-gray-700 border border-teal-500 rounded-2xl overflow-hidden shadow-lg hover:shadow-teal-500/40 transition-transform hover:-translate-y-2 duration-300 max-w-sm w-full flex flex-col"
+              className="bg-gray-700 text-white border border-teal-500 rounded-2xl overflow-hidden shadow-lg hover:shadow-teal-500/40 transition-transform hover:-translate-y-2 duration-300 max-w-sm w-full flex flex-col"
             >
               <div className="h-48 w-full overflow-hidden">
                 <img
