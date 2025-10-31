@@ -17,7 +17,7 @@ export function About() {
           </h1>
 
           <div className="flex justify-center items-center">
-            <div className="bg-slate-100 border border-teal-500 rounded-2xl p-10 shadow-2xl w-full max-w-5xl transition-colors duration-300">
+            <div className="bg-slate-700 border border-teal-500 rounded-2xl p-10 shadow-2xl w-full max-w-5xl transition-colors duration-300">
               <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
                 Hello! I'm{" "}
                 <span className="text-teal-400 font-semibold">
