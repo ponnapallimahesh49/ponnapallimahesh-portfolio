@@ -96,7 +96,7 @@ export function ProjectsHome() {
                     {project.tools.map((tool, index) => (
                       <span
                         key={index}
-                        className="px-3 py-1 text-xs bg-gray-300 dark:bg-slate-700 text-teal-300 rounded-full"
+                        className="px-3 py-1 text-xs bg-gray-300 dark:bg-slate-700 text-teal-500 rounded-full"
                       >
                         {tool}
                       </span>
